@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root{
     --white: #FFFCF2;
     --orange: #EB5E28;
@@ -7,7 +9,8 @@
 
 body{
     margin: 0px;
-    font-family: 'Orelega One', cursive;
+    font-family: 'Roboto', sans-serif;
+
     /*overflow-x: hidden;*/
 }
 
@@ -104,16 +107,41 @@ footer ul > a:hover{
     }
 }
 
+
+/* taskbar */
 #taskbar{
     margin:0;
-    height: 40px;
+    height: 58px;
     display: block;
     background-color: var(--darkGrey);
 }
 
 #taskbar li{
     display: inline-block;
+    position: relative;
+    font-size: 17pt;
     margin: 0 20px;
     float: right;
 }
+
+#taskbar :last-child, #taskbar :nth-child(2){
+    top: 14px;
+}
+
+#taskbar :last-child{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#taskbar :first-child{
+    background-color: var(--orange);
+    top: 3.5px;
+    /* the different top & bottom padding center it because there's a content padding above the text idk how to adjust */
+    padding: 9px 13px 12px 13px;
+    margin-right: 20px;
+    border-radius: 14px;
+}
+
+/* Scrollbar */
+
 

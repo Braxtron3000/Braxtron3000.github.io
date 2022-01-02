@@ -23,7 +23,7 @@ const IndexPage = () => (
 
     
       <ul id="taskbar">
-        <li>Email me</li>
+        <li id="email_btn">email me</li>
         <li>618-402-8929</li>
         <li>Resume</li>
       </ul>
