@@ -1,10 +1,17 @@
+:root{
+    --white: #FFFCF2;
+    --orange: #EB5E28;
+    --darkGrey: #403D39;
+    --lightBlue: #21ABCD;
+}
+
 .banner{
     display: flex;
     align-items: center;
     margin:0px;
     height: 35em;
     width: 100%;
-    background: url("../images/festival2.jpg") no-repeat center;
+    background: url("../images/beautifulScenery.jpg") no-repeat center;
     background-size: cover;
     font-family: 'Bangers', cursive;
 }
@@ -23,7 +30,7 @@
     bottom: 45%;
     transform: translateY(-50%);
     opacity: 1;
-    color: #043216;
+    color:var(--white);
 }
 
 .banner *{
@@ -36,7 +43,7 @@
     margin-right: auto;
     padding: 3em;
     padding-top: 4em;
-    background-color: rgb(248,248,255,.7);
+    
     border-radius: 0px;
 
 }
@@ -54,5 +61,6 @@
         background-color: rgb(248,248,255,.7);
     }
     
+
 
 }

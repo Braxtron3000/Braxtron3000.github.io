@@ -1,5 +1,8 @@
 :root{
-    --mainC: #043216;
+    --white: #FFFCF2;
+    --orange: #EB5E28;
+    --darkGrey: #403D39;
+    --lightBlue: #21ABCD;
 }
 
 body{
@@ -10,7 +13,7 @@ body{
 
 
 #nav{
-    background-color: var(--mainC);
+    background-color: var(--white);
     position: sticky;
     top: 0;
     display: flex;
@@ -42,7 +45,7 @@ body{
 
 /*footer stuff*/
 footer ul{
-    background-color: var(--mainC);
+    background-color: var(--white);
     margin:0;
     text-align: center;
 }
@@ -101,4 +104,16 @@ footer ul > a:hover{
     }
 }
 
+#taskbar{
+    margin:0;
+    height: 40px;
+    display: block;
+    background-color: var(--darkGrey);
+}
+
+#taskbar li{
+    display: inline-block;
+    margin: 0 20px;
+    float: right;
+}
 
