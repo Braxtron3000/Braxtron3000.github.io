@@ -36,8 +36,13 @@ const IndexPage = () => (
       url="../images/festival.jpeg"
     />
 
-
-
+    {/* About */}
+    <section>
+      <div class='about'>
+        <h1>Hi I'm Brax</h1>
+        <p>As the above says I recently graduated. I'm a december graduate looking to apply what i've learned in mobile and web development</p>
+      </div>
+      </section>
 
 
     <main>

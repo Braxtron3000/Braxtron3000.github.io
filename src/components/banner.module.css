@@ -9,7 +9,7 @@
     display: block;
     align-items: center;
     margin:0px;
-    height: 35em;
+    height: 45em;
     width: 100%;
     background: url("../images/beautifulScenery.jpg") no-repeat center;
     background-size: cover;
@@ -43,11 +43,11 @@
     /* src: url("../images/beautifulScenery.jpg"); */
     background: url("../images/profileIcon.jpg") no-repeat center;
     background-size: contain;
-    height: 175px;
-    width: 133px;
+    height: 173px;
     background-color: red;
+    width: 133px;
     top: 10%;
-    border-radius: 38px;
+    border-radius: 15px;
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     left: 50%;

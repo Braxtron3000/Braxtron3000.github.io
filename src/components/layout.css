@@ -15,25 +15,6 @@ body{
 }
 
 
-#nav{
-    background-color: var(--white);
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    margin: 0;
-    /*font-size: 2vw;*/
-    font-size: 1.3em;
-}
-#nav li{
-    display: inline;
-    margin:0 1em 0 1em;
-    color: white;
-    padding-top: .5em;
-    padding-bottom: .5em;
-}
 
 
 
@@ -48,7 +29,7 @@ body{
 
 /*footer stuff*/
 footer ul{
-    background-color: var(--white);
+    background-color: var(--lightBlue);
     margin:0;
     text-align: center;
 }
@@ -77,10 +58,10 @@ footer h3{
 /*direct child of the ul*/
 footer ul > a{
     display: inline;
-    background-color: #ff9;
-    color: black;
+    background-color: var(--white);
+    color: var(--lightBlue);
     padding:2px 20px 2px 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     border:none;
 }
 @media screen and (max-width:400px) {
@@ -91,27 +72,30 @@ footer ul > a{
 
 footer ul > a:hover{
     animation-name: btnHover;
-    animation-duration: 1s;
+    animation-duration: .8s;
     animation-fill-mode: forwards;
 }
 
 @keyframes btnHover{
     from{
-        background-color: #ff9;
-        color:black;
+        background-color: var(--white);
+        color:var(--lightBlue);
     }
     
     to{
-        background-color: gold;
-        color:black;
+        background-color: var(--orange);
+        color:var(--white);
     }
 }
 
 
 /* taskbar */
 #taskbar{
+    position: fixed;
     margin:0;
     height: 58px;
+    width: 100%;
+    z-index: 1;
     display: block;
     background-color: var(--darkGrey);
 }
@@ -138,10 +122,26 @@ footer ul > a:hover{
     top: 3.5px;
     /* the different top & bottom padding center it because there's a content padding above the text idk how to adjust */
     padding: 9px 13px 12px 13px;
-    margin-right: 20px;
+    margin-right: 80px;
     border-radius: 14px;
 }
 
 /* Scrollbar */
 
+
+/* about section */
+.about{
+    background-color: var(--darkGrey);
+    height: 200px;
+    margin: 0;
+}
+
+.about *{
+    color: var(--white);
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 
